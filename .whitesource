@@ -40,5 +40,12 @@
       "commitMessagePrefix": "[NEUTRAL] "
      }
     ]
+  },
+  "imageSettings": {
+    "imageTracing": {
+      "enableImageTracingPR": true,
+      "addDockerfilePath": true,
+      "addRepositoryCoordinates": true
+    }
   }
 }
