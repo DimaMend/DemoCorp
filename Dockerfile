@@ -15,9 +15,6 @@ EXPOSE 8080
 EXPOSE 9090
 
 WORKDIR /home/webgoat
-# Mend traceability labels
-LABEL io.mend.image.dockerfile.path=Dockerfile
-LABEL org.opencontainers.image.source=https://github.com/DimaMend/DemoCorp
 ENTRYPOINT [ "java", \
    "-Duser.home=/home/webgoat", \
    "-Dfile.encoding=UTF-8", \
@@ -36,3 +33,7 @@ ENTRYPOINT [ "java", \
    "-Dwebgoat.port=8080", \
    "-Dwebwolf.port=9090", \
    "-jar", "webgoat.jar" ]
+
+# Mend traceability labels
+LABEL io.mend.image.dockerfile.path=Dockerfile
+LABEL org.opencontainers.image.source=https://github.com/DimaMend/DemoCorp
